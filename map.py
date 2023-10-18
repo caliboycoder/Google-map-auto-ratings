@@ -16,10 +16,10 @@ option = webdriver.ChromeOptions()
 option.add_experimental_option("debuggerAddress", "localhost:9222")
 driver = webdriver.Chrome(options=option)
 time.sleep(4)
-driver.get("https://www.google.com/maps/@12.9531904,77.6142848,12z?entry=ttu")
+driver.get("https://www.google.com/maps/@30.6056229,-97.8789251,13z?entry=ttu")
 time.sleep(4)
 search_box = driver.find_element(By.NAME, "q")
-search_box.send_keys("oxford school melbourne") #replace with your search place
+search_box.send_keys("Indian Tailoring and Alterations") #replace with your search place
 search_box.send_keys(Keys.RETURN)
 
 time.sleep(6)
